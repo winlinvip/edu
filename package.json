@@ -1,0 +1,22 @@
+{
+  "name": "edu",
+  "version":"1.0.0",
+  "description": "Demo for https://cloud.tencent.com/product/ocl",
+  "main": "index.js",
+  "scripts": {
+    "start": "env NODE_ENV=development node ."
+  },
+  "author": "Winlin",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-mount": "^4.0.0",
+    "koa-proxies": "^0.12.1",
+    "koa-router": "^10.1.1",
+    "koa-static": "^5.0.0",
+    "koa-static-cache": "^5.1.4",
+    "koa2-cors": "^2.0.6",
+    "moment": "^2.29.1"
+  }
+}
