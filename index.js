@@ -26,6 +26,12 @@ router.all('/edu/v1/versions', async (ctx) => {
   ctx.body = utils.asResponse(0, {version: pkg.version});
 });
 
+router.all('/edu/v1/callback', async (ctx) => {
+  const {event_type} = ctx.request.body;
+  console.log(`callback event=${event_type} with ${JSON.stringify(JSON.parse(ctx.request.rawBody))}`);
+  ctx.body = {...utils.asResponse(0), error_code: 0};
+});
+
 app.use(router.routes());
 
 app.listen(15000, () => {
